@@ -8,7 +8,7 @@ For example, product(A, B) returns the same as ((x,y) for x in A for y in B).'''
 
 
 
-m itertools import product
+from itertools import product
 
 A = raw_input().split()
 A = list(map(int, A))
