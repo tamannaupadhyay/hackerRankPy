@@ -1,0 +1,13 @@
+n=int(input("enter the start"))
+m=int(input("enter the last"))
+for i in range(n,m+1):
+    for j in range(n,i+1):
+        print(i,end="")
+    print()
+
+for i in range(m-1,n-1,-1):
+    for j in range(n):
+        print(i,end="")
+    n-=1
+    print()
+
