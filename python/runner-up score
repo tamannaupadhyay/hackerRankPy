@@ -1,0 +1,5 @@
+a=input()
+b=a.split(" ")
+b.sort()
+c=len(b)
+print(b[c-2])
