@@ -1,5 +1,26 @@
+//for_single_digit_no
+
 a=input()
 b=a.split(" ")
 b.sort()
 c=len(b)
 print(b[c-2])
+
+//method 2
+n=int(input())
+b=[]
+for i in range(n):
+    a=int(input())
+    b.append(a)
+    b.sort()
+print(b[n-2])
+
+//
+n = int(input())
+arr = list(map(int, input().split()))
+listnew=[]
+for i in arr:
+    if i not in listnew:
+            listnew.append(i)
+    listnew.sort(reverse=True)
+print(listnew[1])
