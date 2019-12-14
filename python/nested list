@@ -1,0 +1,17 @@
+student=[]
+n=int(input())
+for _ in range(n):
+               name=input()
+               score=float(input())
+               student.append([score,name])
+student.sort()
+print(student)
+k=0
+for i in range(n):
+    if student[i][0]>student[k][0] and student[i][0] != min(student):
+        k=i
+        break
+for i in range(n):
+    if student[i][0]==student[k][0]:
+        print(student[i][1])
+
