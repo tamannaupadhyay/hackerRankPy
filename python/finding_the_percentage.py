@@ -1,3 +1,4 @@
+
 student=[]
 mark=[]
 s=[]
@@ -16,4 +17,9 @@ for i in range(n):
             su+=s
             a=su/3
         mark.append(a)
-print(mark[0])
+x=mark[0]
+
+print("%.2f" % round(x,2))
+
+
+
