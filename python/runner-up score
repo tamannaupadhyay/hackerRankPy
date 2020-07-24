@@ -24,3 +24,11 @@ for i in arr:
             listnew.append(i)
     listnew.sort(reverse=True)
 print(listnew[1])
+
+
+//
+n=int(input())
+a=list(map(int,input().split()))
+b=list(dict.fromkeys(a))
+b.remove(max(b))
+print(max(b))
